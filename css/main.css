@@ -1,0 +1,449 @@
+/* start global rules  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: whitesmoke;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.m-color{
+    color: #FF305B !important;
+}
+.m-bg{
+    background-color: #333333;
+}
+.gray-bg{
+    background-color: #F1F1F1;
+}
+.flexs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+   border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.head{
+    width: 100%;
+    padding: 10px;
+}
+.head h2{
+    margin: 30px 0 10px 0;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.bdr{
+    background-color: #ff305b;
+    height: 2px;
+    width: 13%;
+    margin: auto;
+    position: relative;
+}
+.brdTop,.brdBottom{
+    position: absolute;
+    background-color: #ff305b;
+    height: 1px;
+    width: 50%;
+    top: -8px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.brdBottom{
+    top: 8px;
+}
+/* end global rules  */
+/* start home */
+#home{ 
+    height: 100vh;
+    background-image: url(../images/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-item .nav-link{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding: 15px 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.nav-item .nav-link:hover ,.nav-item .active{
+    color: #FF305B !important;
+}
+#home .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0,0.7);
+}
+.slider h3{
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.slider h1{
+    color: #FF305B;
+    line-height: .75em;
+    vertical-align: -15%;;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+.slider p{
+    font-size: 26px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+}
+.slider p::after{
+    content: " ";
+    letter-spacing: 2px;
+    animation-name: typing;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes typing {
+    0%{
+        content:"|"
+    }
+    3%{
+        content:"D |"
+    }
+    6%{
+        content:"Di |"
+    }
+    9%{
+        content:"Dig |"
+    }
+    12%{
+        content:"Digi |"
+    }
+    15%{
+        content:"Digit |"
+    }
+    18%{
+        content:"Digita |"
+    }
+    21%{
+        content:"Digital |"
+    }
+    24%{
+        content:"Digital |"
+    }
+    25%{
+        content:"Digital |"
+    }
+    26%{
+        content:"Digital |"
+    }
+    27%{
+        content:"Digital |"
+    }
+    28%{
+        content:"Digita |"
+    }
+    30%{
+        content:"Digit |"
+    }
+    33%{
+        content:"Digi |"
+    }
+    36%{
+        content:"Dig |"
+    }
+    39%{
+        content:"Di |"
+    }
+    42%{
+        content:"D |"
+    }
+    /* 45%{
+        content:"D |"
+    } */
+    48%{
+        content:"|"
+    }
+    51%{
+        content:"t |"
+    }
+    54%{
+        content:"tr |"
+    }
+    57%{
+        content:"tra |"
+    }
+    60%{
+        content:"tran |"
+    }
+    63%{
+        content:"trans |"
+    }
+    66%{
+        content:"transf |"
+    }
+    69%{
+        content:"transfo |"
+    }
+    72%{
+        content:"transform |"
+    }
+    75%{
+        content:"transformation |"
+    }
+    78%{
+        content:"transformati |"
+    }
+    81%{
+        content:"transforma |"
+    }
+    84%{
+        content:"transfor |"
+    }
+    87%{
+        content:"transf |"
+    }
+    90%{
+        content:"tran |"
+    }
+    93%{
+        content:"tra |"
+    }
+    96%{
+        content:"tr |"
+    } 
+    98%{
+        content:"t |"
+    }
+    100%{
+        content:" |"
+    }
+}
+/* end home */
+/* start about */
+#Source {
+    padding: 48px 0;
+    margin: 48px 0;
+}
+#Source .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.col2 a{
+    text-decoration: none;
+}
+#Source .col1  {
+    width: 42%;
+}
+#Source .col2 {
+    width: 54%;
+    padding: 1%;
+}
+#Source .img-container {
+    width: 80%;
+    margin-right:6%;
+    margin-left:auto;
+    border:5px solid #6d6d6d;
+    border-radius: 10px;
+}
+#Source .col1 .img-container img{
+    border-radius: 10px;
+}
+#Source .border {
+    position: relative;
+    top: 25px;
+    left: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#Source .contact{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Source .border:hover .contact{
+    top: 0;
+}
+#Source .contact i {
+    background-color: #414040;
+    color:#fff;
+    line-height: 40px;
+}
+#about .contact .icon1:hover{
+    background-color: blue;
+    color: #ffffff;
+}
+#Source .contact  .icon2:hover{
+   background-color: red;
+   color: #ffffff;
+}
+#Source .contact  .icon3:hover{
+    background-color: rgb(96, 174, 204);
+    color: #ffffff;
+}
+#Source .contact .icon4:hover{
+    background-color: darkblue;
+    color: #ffffff;
+}
+#Source .col2 h2{
+    font-size: 2rem;
+}
+#Source .col2 .data {
+    border-top: 1px dashed black;
+    margin: 5px 0;
+    padding: 10px 10px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Source .data-col{
+    padding:8px 0 ;
+}
+#Source .data-col .data-head {
+    color: black ;
+    font-weight: 500;
+}
+#Source.btn-container{
+    margin-top: 10px;
+}
+#Source .btn{
+    color: white;
+    font-size: 16px;
+    background-color: #ff305b;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    transition:all  1s;
+}
+#Source.btn2{
+    margin: 10px;
+}
+#Source .btn:hover{
+    background-color: #ff2504;
+    color: #fff;
+}
+#Source .btn i {
+    margin: 0 10px; 
+    color: #fff;
+    font-size: 20px;
+} 
+.page-icon {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size:17px;
+    border-radius: 100%;
+    line-height: 40px;
+    margin: 7px 10px 10px 0;
+    transition: all .5s;
+}
+@media screen and (max-width:990px){
+    #Source .col1  {
+        width: 44%;
+        padding: 1%;
+    }
+    #Source .img-container {
+        width: 100%;
+        border:none;
+        margin: auto;
+    }
+    #Source .border {
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    #Source .data-col{
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+@media screen and (max-width:768px){
+    #Source .col1 ,#Source .col2{
+    justify-content: center;
+    width: 80%;
+    }
+}
+@media screen and (max-width:425px){
+    #Source .col1 ,#Source .col2{
+        justify-content: center;
+        width: 98%;
+        }
+}
+/* end about */
+/* start services */
+
+/* end services */
+/* start portfolio */
+.portfolio-item{
+    border-radius: 10px;
+}
+.portfolio-item .img-layer{
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.portfolio-item:hover .img-layer{
+    opacity: 1;
+}
+.portfolio-item .img-layer .img-layer-caption{
+    top: 60%;
+    transition: all 0.5s;
+}
+.portfolio-item:hover .img-layer-caption{
+    top: 0;
+}
+.portfolio-item img{
+    transition: all 0.5s;
+}
+.portfolio-item:hover img{
+    transform: scale(1.1);
+}
+#portfolio .nav-item button{
+    color: #000 !important;
+    border-radius: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+#portfolio .nav-item button.active , #portfolio .nav-item button:hover{
+    color: #e65f78;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background-color: none;
+}
+.nav-pills .nav-link.active{
+    background-color: #ff305b;
+}
